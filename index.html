@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vizitor — AI-Powered Workplace Operations Platform</title>
+  <meta name="description" content="Vizitor is an AI-powered workplace operations platform built to coordinate the daily flow of the workplace across visitor arrivals, shared spaces, front-desk tasks, and operational workflows from one connected system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="module" src="/main.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+  HEADER
+============================================================ -->
+<header id="site-header" class="site-header">
+  <div class="container header-inner">
+    <!-- Logo -->
+    <a href="/" class="header-logo" aria-label="Vizitor Home">
+      <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect width="28" height="28" rx="7" fill="#2563EB"/>
+        <path d="M7 8h14M7 14h10M7 20h12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="21" cy="20" r="3" fill="#06B6D4"/>
+      </svg>
+      <span class="logo-text">Vizitor</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="header-nav" aria-label="Main navigation">
+      <!-- Platform -->
+      <div class="nav-item has-mega-menu" data-menu="platform">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Platform <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega-menu" id="menu-platform" role="region">
+          <div class="mega-menu-inner">
+            <div class="mega-col">
+              <div class="mega-col-label">Platform</div>
+              <a href="#" class="mega-link">
+                <span class="mega-link-icon">⬡</span>
+                <span>
+                  <strong>Platform Overview</strong>
+                  <small>The full operational picture</small>
+                </span>
+              </a>
+              <div class="mega-group-heading">Arrival &amp; Access</div>
+              <a href="#" class="mega-link compact">Visitor Management</a>
+              <div class="mega-group-heading">Space &amp; Resource</div>
+              <a href="#" class="mega-link compact">Meeting Room Booking</a>
+              <a href="#" class="mega-link compact">Desk Booking</a>
+              <a href="#" class="mega-link compact">Space Management</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-label">Operations</div>
+              <div class="mega-group-heading">Front-Desk Operations</div>
+              <a href="#" class="mega-link compact">Delivery Management</a>
+              <a href="#" class="mega-link compact">Queue Management</a>
+              <div class="mega-group-heading">Workforce Presence</div>
+              <a href="#" class="mega-link compact">Attendance Management</a>
+              <div class="mega-group-heading">Platform</div>
+              <a href="#" class="mega-link compact">Integrations &amp; Apps</a>
+              <a href="#" class="mega-link compact">Security &amp; Compliance</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solutions -->
+      <div class="nav-item has-mega-menu" data-menu="solutions">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Solutions <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega-menu" id="menu-solutions" role="region">
+          <div class="mega-menu-inner">
+            <div class="mega-col">
+              <div class="mega-col-label">By Team Role</div>
+              <a href="#" class="mega-link compact">For Workplace Admins</a>
+              <a href="#" class="mega-link compact">For Front Desk Teams</a>
+              <a href="#" class="mega-link compact">For Facilities &amp; Workplace Ops</a>
+              <a href="#" class="mega-link compact">For HR &amp; Attendance</a>
+              <a href="#" class="mega-link compact">For Security &amp; Compliance</a>
+              <a href="#" class="mega-link compact">For Multi-Location Workplaces</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-label">By Use Case</div>
+              <a href="#" class="mega-link compact">Coordinate Workplace Arrivals</a>
+              <a href="#" class="mega-link compact">Manage Shared Spaces &amp; Resources</a>
+              <a href="#" class="mega-link compact">Simplify Front-Desk Operations</a>
+              <a href="#" class="mega-link compact">Standardize Multi-Location Workplaces</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries -->
+      <div class="nav-item has-dropdown" data-menu="industries">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Industries <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu" id="menu-industries">
+          <a href="#" class="dropdown-link">Corporate Offices</a>
+          <a href="#" class="dropdown-link">Enterprise Campuses &amp; Multi-Location</a>
+          <a href="#" class="dropdown-link">Coworking &amp; Flexible Workspaces</a>
+          <a href="#" class="dropdown-link">Healthcare &amp; High-Footfall Environments</a>
+          <a href="#" class="dropdown-link">Manufacturing &amp; Secure Facilities</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">Customers</a>
+      <a href="#" class="nav-link">Pricing</a>
+
+      <!-- Resources -->
+      <div class="nav-item has-mega-menu" data-menu="resources">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Resources <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega-menu narrow" id="menu-resources" role="region">
+          <div class="mega-menu-inner">
+            <div class="mega-col">
+              <div class="mega-col-label">Learn</div>
+              <a href="#" class="mega-link compact">Blog / Insights</a>
+              <a href="#" class="mega-link compact">Guides / Playbooks</a>
+              <a href="#" class="mega-link compact">Help Center</a>
+              <a href="#" class="mega-link compact">FAQs</a>
+              <a href="#" class="mega-link compact">Compare / Alternatives</a>
+              <a href="#" class="mega-link compact">Product Updates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="nav-item has-dropdown" data-menu="company">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Company <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu" id="menu-company">
+          <a href="#" class="dropdown-link">About Vizitor</a>
+          <a href="#" class="dropdown-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <a href="#" class="btn btn-ghost btn-sm">Try for Free</a>
+      <a href="#" class="btn btn-ghost btn-sm">Login</a>
+      <a href="#demo-modal" class="btn btn-primary btn-sm demo-trigger">Book Demo</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-nav-item">
+        <button class="mobile-nav-link accordion-toggle" data-target="mobile-platform">Platform <svg class="chevron" width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mobile-accordion" id="mobile-platform">
+          <a href="#" class="mobile-sub-link">Platform Overview</a>
+          <a href="#" class="mobile-sub-link">Visitor Management</a>
+          <a href="#" class="mobile-sub-link">Meeting Room Booking</a>
+          <a href="#" class="mobile-sub-link">Desk Booking</a>
+          <a href="#" class="mobile-sub-link">Delivery Management</a>
+          <a href="#" class="mobile-sub-link">Attendance Management</a>
+          <a href="#" class="mobile-sub-link">Integrations &amp; Apps</a>
+          <a href="#" class="mobile-sub-link">Security &amp; Compliance</a>
+        </div>
+      </div>
+      <div class="mobile-nav-item">
+        <button class="mobile-nav-link accordion-toggle" data-target="mobile-solutions">Solutions <svg class="chevron" width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mobile-accordion" id="mobile-solutions">
+          <a href="#" class="mobile-sub-link">For Workplace Admins</a>
+          <a href="#" class="mobile-sub-link">For Front Desk Teams</a>
+          <a href="#" class="mobile-sub-link">For Facilities &amp; Workplace Ops</a>
+          <a href="#" class="mobile-sub-link">For HR &amp; Attendance</a>
+          <a href="#" class="mobile-sub-link">For Security &amp; Compliance</a>
+          <a href="#" class="mobile-sub-link">For Multi-Location Workplaces</a>
+        </div>
+      </div>
+      <div class="mobile-nav-item">
+        <button class="mobile-nav-link accordion-toggle" data-target="mobile-industries">Industries <svg class="chevron" width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mobile-accordion" id="mobile-industries">
+          <a href="#" class="mobile-sub-link">Corporate Offices</a>
+          <a href="#" class="mobile-sub-link">Enterprise Campuses</a>
+          <a href="#" class="mobile-sub-link">Coworking &amp; Flexible Workspaces</a>
+          <a href="#" class="mobile-sub-link">Healthcare Environments</a>
+          <a href="#" class="mobile-sub-link">Manufacturing &amp; Secure Facilities</a>
+        </div>
+      </div>
+      <a href="#" class="mobile-nav-link">Customers</a>
+      <a href="#" class="mobile-nav-link">Pricing</a>
+      <div class="mobile-nav-item">
+        <button class="mobile-nav-link accordion-toggle" data-target="mobile-resources">Resources <svg class="chevron" width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mobile-accordion" id="mobile-resources">
+          <a href="#" class="mobile-sub-link">Blog / Insights</a>
+          <a href="#" class="mobile-sub-link">Guides / Playbooks</a>
+          <a href="#" class="mobile-sub-link">Help Center</a>
+          <a href="#" class="mobile-sub-link">FAQs</a>
+        </div>
+      </div>
+      <a href="#" class="mobile-nav-link">About</a>
+      <div class="mobile-ctas">
+        <a href="#" class="btn btn-outline btn-full">Try for Free</a>
+        <a href="#" class="btn btn-primary btn-full demo-trigger">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+  SECTION 1: HERO
+============================================================ -->
+<section class="hero-section" id="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="category-badge">
+        <span class="badge-dot"></span>
+        AI-Powered Workplace Operations Platform
+      </div>
+      <h1 class="hero-headline">Coordinate the daily<br/>flow of your workplace</h1>
+      <p class="hero-subheadline">Visitor arrivals. Shared spaces. Front-desk tasks. Workforce presence. Operational workflows. One connected system built for the teams that run the workplace every day.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary btn-lg demo-trigger">Book Demo</a>
+        <a href="#platform" class="btn btn-outline-dark btn-lg">Explore the Platform <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <p class="hero-microcopy">Built for teams that run the workplace every day.</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="platform-diagram">
+        <!-- Central Hub -->
+        <div class="diagram-hub">
+          <div class="hub-inner">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2563EB" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>Vizitor<br/>Platform</span>
+          </div>
+        </div>
+        <!-- Nodes -->
+        <div class="diagram-node node-1">
+          <div class="node-icon">👤</div>
+          <div class="node-label">Visitor Arrivals</div>
+          <div class="node-status status-active">12 expected today</div>
+        </div>
+        <div class="diagram-node node-2">
+          <div class="node-icon">🗓</div>
+          <div class="node-label">Meeting Rooms</div>
+          <div class="node-status status-active">8 of 14 booked</div>
+        </div>
+        <div class="diagram-node node-3">
+          <div class="node-icon">💺</div>
+          <div class="node-label">Desk Booking</div>
+          <div class="node-status status-warn">67% utilization</div>
+        </div>
+        <div class="diagram-node node-4">
+          <div class="node-icon">📦</div>
+          <div class="node-label">Deliveries</div>
+          <div class="node-status status-active">3 pending pickup</div>
+        </div>
+        <div class="diagram-node node-5">
+          <div class="node-icon">🏢</div>
+          <div class="node-label">Front Desk</div>
+          <div class="node-status status-active">5 tasks open</div>
+        </div>
+        <div class="diagram-node node-6">
+          <div class="node-icon">📊</div>
+          <div class="node-label">Attendance</div>
+          <div class="node-status status-active">142 present</div>
+        </div>
+        <!-- Connection Lines SVG -->
+        <svg class="diagram-connections" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lines from center (240,240) to each node approximate positions -->
+          <line x1="240" y1="240" x2="100" y2="90" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="240" y1="240" x2="380" y2="90" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="240" y1="240" x2="430" y2="240" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="240" y1="240" x2="380" y2="390" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="240" y1="240" x2="100" y2="390" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <line x1="240" y1="240" x2="50" y2="240" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+          <circle cx="240" cy="240" r="60" stroke="#2563EB" stroke-width="1" stroke-dasharray="8 8" opacity="0.2"/>
+          <circle cx="240" cy="240" r="110" stroke="#2563EB" stroke-width="1" stroke-dasharray="6 10" opacity="0.1"/>
+        </svg>
+
+        <!-- AI Status Bar -->
+        <div class="diagram-ai-bar">
+          <div class="ai-pulse"></div>
+          <span>AI operational — 6 workflows coordinated, 2 alerts resolved</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 2: TRUST BAR
+============================================================ -->
+<section class="trust-bar" id="trust">
+  <div class="container">
+    <p class="trust-label">Trusted by teams running modern workplaces</p>
+    <div class="logo-strip">
+      <div class="logo-item"><div class="logo-placeholder">Accenture</div></div>
+      <div class="logo-item"><div class="logo-placeholder">Deloitte</div></div>
+      <div class="logo-item"><div class="logo-placeholder">KPMG</div></div>
+      <div class="logo-item"><div class="logo-placeholder">Infosys</div></div>
+      <div class="logo-item"><div class="logo-placeholder">Wipro</div></div>
+      <div class="logo-item"><div class="logo-placeholder">HCL Tech</div></div>
+      <div class="logo-item"><div class="logo-placeholder">Cognizant</div></div>
+      <div class="logo-item"><div class="logo-placeholder">TCS</div></div>
+    </div>
+    <p class="trust-sub">From visitor-heavy offices to operationally complex workplaces</p>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 3: THE WORKPLACE COORDINATION PROBLEM
+============================================================ -->
+<section class="problem-section" id="problem">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">The Reality</div>
+      <h2 class="section-heading">Workplaces do not break in one place.<br/>They break across the day.</h2>
+      <p class="section-subtext">Visitors arrive without context. Front desks handle too many moving parts. Shared spaces clash. Teams rely on manual follow-ups. And basic workplace coordination still lives across disconnected tools.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Arrival Friction</h3>
+        <p>Visitors arrive with no prior coordination. Reception scrambles to locate the host, verify the visit, and manage entry — all manually.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Front-Desk Overload</h3>
+        <p>One team absorbs the friction from every other workflow — deliveries, queries, access requests, visitor queues — with no structured system to support them.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Shared-Space Conflict</h3>
+        <p>Rooms get double-booked. Desks sit empty or over-claimed. Space usage stays invisible until problems surface at the wrong moment.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Operational Blind Spots</h3>
+        <p>No consolidated view of who is on-site, what is pending, or where bottlenecks are forming. Managers find out too late.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Disconnected Workflows</h3>
+        <p>Visitor logs in one system. Room bookings in another. Attendance tracked in a third. No shared operational layer connecting them.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Reactive Management</h3>
+        <p>Issues get addressed after they cause friction. Without structured operational workflows, the workplace defaults to reacting instead of coordinating.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 4: WHY THE OLD WAY BREAKS
+============================================================ -->
+<section class="comparison-section" id="comparison">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">The Structural Problem</div>
+      <h2 class="section-heading">The problem is not one broken workflow.<br/>It is how the workplace still runs in fragments.</h2>
+      <p class="section-subtext">When arrivals, front-desk tasks, spaces, and operational updates live across different tools and teams, small delays turn into daily friction.</p>
+    </div>
+
+    <div class="comparison-table">
+      <div class="comparison-col old-way">
+        <div class="comparison-col-header">
+          <div class="comparison-badge old">Fragmented Approach</div>
+          <h3>The old way</h3>
+        </div>
+        <div class="comparison-rows">
+          <div class="comparison-row">
+            <div class="comparison-icon old">✕</div>
+            <p>Visitor updates live with reception only — everyone else is uninformed until something goes wrong.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon old">✕</div>
+            <p>Room and desk usage depends on manual coordination, email chains, and spreadsheet tracking.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon old">✕</div>
+            <p>Front desk becomes the handoff point for too many tasks with no structured support system.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon old">✕</div>
+            <p>Teams react after issues happen — there is no early visibility into what is building up.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon old">✕</div>
+            <p>Every process has its own tool or spreadsheet — no shared operational context across the day.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-divider">
+        <div class="divider-line"></div>
+        <div class="divider-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="comparison-col new-way">
+        <div class="comparison-col-header">
+          <div class="comparison-badge new">Vizitor</div>
+          <h3>A coordinated workplace</h3>
+        </div>
+        <div class="comparison-rows">
+          <div class="comparison-row">
+            <div class="comparison-icon new">✓</div>
+            <p>Everyone works from shared operational visibility — hosts, admins, and teams stay informed in real time.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon new">✓</div>
+            <p>Shared spaces are managed in one connected system — rooms, desks, and resources coordinated with full context.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon new">✓</div>
+            <p>Workflows move with less manual dependency — front-desk tasks are structured, trackable, and delegable.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon new">✓</div>
+            <p>Teams stay ahead of the day — operational patterns are visible before they become friction.</p>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-icon new">✓</div>
+            <p>Daily operations run through one connected layer — arrivals, spaces, presence, and tasks in one system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 5: WHAT VIZITOR IS
+============================================================ -->
+<section class="platform-def-section dark-section" id="platform">
+  <div class="container">
+    <div class="section-header centered light">
+      <div class="section-label light">Platform Definition</div>
+      <h2 class="section-heading">Vizitor is built to run the daily<br/>flow of workplace operations</h2>
+      <p class="section-subtext light">Vizitor is an AI-powered workplace operations platform that connects the workflows workplaces rely on every day — from visitor arrivals and front-desk tasks to shared spaces, workplace presence, and operational visibility.</p>
+    </div>
+
+    <div class="arch-grid">
+      <div class="arch-card">
+        <div class="arch-card-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#3B82F6" stroke-width="1.5"/><path d="M10 14l3 3 6-6" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="arch-card-number">01</div>
+        <h3>Arrival &amp; Access Operations</h3>
+        <p>Manage visitor arrivals, approvals, and entry coordination. Pre-registration, host notifications, and access control in one flow.</p>
+        <a href="#" class="arch-link">Visitor Management →</a>
+      </div>
+
+      <div class="arch-card">
+        <div class="arch-card-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="4" stroke="#3B82F6" stroke-width="1.5"/><path d="M9 14h10M14 9v10" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="arch-card-number">02</div>
+        <h3>Space &amp; Resource Operations</h3>
+        <p>Coordinate meeting rooms, desks, spaces, and shared resources. Real-time availability, utilization tracking, and booking control.</p>
+        <a href="#" class="arch-link">Meeting Rooms &amp; Desks →</a>
+      </div>
+
+      <div class="arch-card">
+        <div class="arch-card-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="3" stroke="#3B82F6" stroke-width="1.5"/><path d="M8 12h12M8 16h8" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="arch-card-number">03</div>
+        <h3>Front-Desk Operations</h3>
+        <p>Simplify deliveries, service flow, and day-to-day reception tasks. Reduce manual dependency and keep workflows structured.</p>
+        <a href="#" class="arch-link">Delivery &amp; Queue Mgmt →</a>
+      </div>
+
+      <div class="arch-card">
+        <div class="arch-card-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="9" r="4" stroke="#3B82F6" stroke-width="1.5"/><path d="M6 24v-1a8 8 0 0 1 16 0v1" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="arch-card-number">04</div>
+        <h3>Workforce Presence</h3>
+        <p>Track workplace presence, attendance, and daily people movement. Give HR and ops teams structured visibility without manual effort.</p>
+        <a href="#" class="arch-link">Attendance Management →</a>
+      </div>
+
+      <div class="arch-card arch-card-wide">
+        <div class="arch-card-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="22" rx="4" stroke="#06B6D4" stroke-width="1.5"/><circle cx="14" cy="14" r="5" stroke="#06B6D4" stroke-width="1.5"/><path d="M14 9V7M14 21v-2M9 14H7M21 14h-2" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="arch-card-number accent">05</div>
+        <h3>Control &amp; Visibility</h3>
+        <p>Bring workplace workflows into one operational view. AI-assisted insights, cross-workflow visibility, and daily operational control — so your team stays informed, not just reactive.</p>
+        <a href="#" class="arch-link accent">Explore Platform Control →</a>
+      </div>
+    </div>
+
+    <div class="section-cta centered">
+      <a href="#" class="btn btn-primary btn-lg">Explore the Platform</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 6: PLATFORM ARCHITECTURE OVERVIEW
+============================================================ -->
+<section class="arch-overview-section" id="architecture">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Platform Architecture</div>
+      <h2 class="section-heading">One platform, organized around how<br/>workplaces actually run</h2>
+      <p class="section-subtext">Vizitor connects the operational workflows that shape the workplace day — from arrivals and front-desk tasks to shared spaces, workforce presence, and operational visibility.</p>
+    </div>
+
+    <div class="arch-system-diagram">
+      <div class="arch-layers">
+        <div class="arch-layer layer-data">
+          <div class="layer-label">
+            <span class="layer-dot accent"></span>
+            AI &amp; Intelligence Layer
+          </div>
+          <div class="layer-desc">Operational insights, alerts, and workflow coordination across all modules</div>
+        </div>
+
+        <div class="arch-layer-modules">
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6" r="3" stroke="#2563EB" stroke-width="1.5"/><path d="M4 18v-1a6 6 0 0 1 12 0v1" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Visitor Mgmt</h4>
+            <p>Arrivals, approvals, pre-reg, entry</p>
+          </div>
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#2563EB" stroke-width="1.5"/><path d="M7 10h6M7 13h4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Room Booking</h4>
+            <p>Real-time availability &amp; control</p>
+          </div>
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M3 6h14M3 14h8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Desk Booking</h4>
+            <p>Flexible workspace management</p>
+          </div>
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16 4H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" stroke="#2563EB" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Delivery Mgmt</h4>
+            <p>Packages, dispatch, alerts</p>
+          </div>
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#2563EB" stroke-width="1.5"/><path d="M10 6v4l3 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Queue Mgmt</h4>
+            <p>Service flow &amp; wait management</p>
+          </div>
+          <div class="arch-module">
+            <div class="module-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h12M2 15h8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Attendance</h4>
+            <p>Presence tracking &amp; reporting</p>
+          </div>
+        </div>
+
+        <div class="arch-layer layer-base">
+          <div class="layer-label">
+            <span class="layer-dot base"></span>
+            Connected Data &amp; Integrations Layer
+          </div>
+          <div class="layer-desc">Single operational record connecting people, spaces, tasks, and time across the workplace</div>
+        </div>
+      </div>
+
+      <div class="arch-connector-note">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#2563EB" stroke-width="1.5"/><path d="M8 5v3l2 1.5" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+        All modules share a unified operational context — no re-entry, no disconnected records, no blind spots.
+      </div>
+    </div>
+
+    <div class="section-cta centered">
+      <a href="#" class="btn btn-outline btn-lg">Explore Platform Architecture</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 7: GUIDED PLATFORM / MODULE TOUR
+============================================================ -->
+<section class="module-tour-section" id="modules">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Platform Tour</div>
+      <h2 class="section-heading">See how Vizitor supports the<br/>workplace across the day</h2>
+      <p class="section-subtext">From visitor arrivals and approvals to spaces, front-desk tasks, and workplace visibility — each part of Vizitor is built to reduce operational friction and keep the day moving.</p>
+    </div>
+
+    <div class="module-tour">
+      <!-- Tab Navigation -->
+      <div class="tour-tabs" role="tablist">
+        <button class="tour-tab active" role="tab" data-tab="arrival" aria-selected="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 16v-.5a6 6 0 0 1 12 0V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Arrival &amp; Access
+        </button>
+        <button class="tour-tab" role="tab" data-tab="spaces" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 9h6M9 6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Spaces &amp; Resources
+        </button>
+        <button class="tour-tab" role="tab" data-tab="frontdesk" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="4" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 9h8M5 12h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Front-Desk Ops
+        </button>
+        <button class="tour-tab" role="tab" data-tab="workforce" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="7" cy="5" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="13" cy="5" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 15v-.5a6 6 0 0 1 12 0V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M15 10a4 4 0 0 1 2 3.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Workforce Presence
+        </button>
+        <button class="tour-tab" role="tab" data-tab="visibility" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Visibility &amp; Control
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="tour-panels">
+        <!-- Arrival & Access -->
+        <div class="tour-panel active" id="panel-arrival" role="tabpanel">
+          <div class="panel-content">
+            <div class="panel-info">
+              <h3>Arrival &amp; Access Operations</h3>
+              <p>Coordinate the full visitor journey from pre-arrival to departure. Give reception teams structured workflows and give hosts real-time visibility without manual chasing.</p>
+              <ul class="panel-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Visitor check-in and host-approval workflows
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Pre-registration and automated host notifications
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Badge printing and access coordination
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Entry logs and real-time arrival visibility
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Compliance documentation and NDA capture
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-sm">Learn More About Visitor Management →</a>
+            </div>
+            <div class="panel-visual">
+              <div class="product-ui-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-title">Visitor Arrivals — Today</div>
+                  <div class="mockup-status online">● Live</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-stats-row">
+                    <div class="mockup-stat"><span class="stat-num">12</span><span class="stat-label">Expected</span></div>
+                    <div class="mockup-stat"><span class="stat-num green">8</span><span class="stat-label">Checked In</span></div>
+                    <div class="mockup-stat"><span class="stat-num orange">3</span><span class="stat-label">Pending</span></div>
+                    <div class="mockup-stat"><span class="stat-num gray">1</span><span class="stat-label">Departed</span></div>
+                  </div>
+                  <div class="mockup-table">
+                    <div class="mockup-row header-row">
+                      <span>Visitor</span><span>Host</span><span>Time</span><span>Status</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>Sarah Chen</span><span>M. Patel</span><span>10:00</span><span class="badge-in">Checked In</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>David Okafor</span><span>R. Singh</span><span>10:30</span><span class="badge-pending">Arriving</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>Lisa Müller</span><span>A. Gupta</span><span>11:00</span><span class="badge-pending">Pending</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>James Park</span><span>T. Nair</span><span>11:30</span><span class="badge-out">Pre-reg</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spaces & Resources -->
+        <div class="tour-panel" id="panel-spaces" role="tabpanel">
+          <div class="panel-content">
+            <div class="panel-info">
+              <h3>Space &amp; Resource Operations</h3>
+              <p>Give every team member a clear, real-time view of room and desk availability. Reduce booking conflicts, improve utilization, and eliminate coordination through email or spreadsheets.</p>
+              <ul class="panel-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Real-time meeting room availability and booking
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Flexible desk booking with floor-map visibility
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Utilization tracking and space analytics
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Conflict resolution and booking policy controls
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-sm">Learn More About Space Management →</a>
+            </div>
+            <div class="panel-visual">
+              <div class="product-ui-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-title">Space Overview — Floor 3</div>
+                  <div class="mockup-status online">● Live</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-stats-row">
+                    <div class="mockup-stat"><span class="stat-num">14</span><span class="stat-label">Meeting Rooms</span></div>
+                    <div class="mockup-stat"><span class="stat-num green">6</span><span class="stat-label">Available</span></div>
+                    <div class="mockup-stat"><span class="stat-num orange">8</span><span class="stat-label">In Use</span></div>
+                    <div class="mockup-stat"><span class="stat-num">68%</span><span class="stat-label">Utilization</span></div>
+                  </div>
+                  <div class="space-grid-visual">
+                    <div class="space-block occupied">Atlas<br/><small>2:00–3:30</small></div>
+                    <div class="space-block available">Meridian<br/><small>Available</small></div>
+                    <div class="space-block occupied">Apex<br/><small>1:00–4:00</small></div>
+                    <div class="space-block available">Horizon<br/><small>Available</small></div>
+                    <div class="space-block occupied">Pinnacle<br/><small>2:30–3:00</small></div>
+                    <div class="space-block available">Summit<br/><small>Available</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Front-Desk Ops -->
+        <div class="tour-panel" id="panel-frontdesk" role="tabpanel">
+          <div class="panel-content">
+            <div class="panel-info">
+              <h3>Front-Desk Operations</h3>
+              <p>Restructure front-desk work from a reactive catch-all into a managed operational workflow. Deliveries, queues, service tasks, and coordination in one structured view.</p>
+              <ul class="panel-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Delivery logging, assignment, and pickup notifications
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Service queue management and wait-time tracking
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Task delegation and structured follow-up workflows
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Reception dashboard with unified operational view
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-sm">Learn More About Front-Desk Operations →</a>
+            </div>
+            <div class="panel-visual">
+              <div class="product-ui-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-title">Front Desk — Operations View</div>
+                  <div class="mockup-status online">● Active</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-section-title">Deliveries Today</div>
+                  <div class="mockup-table">
+                    <div class="mockup-row">
+                      <span>📦 DocuSign Envelope</span><span>R. Sharma</span><span class="badge-pending">Awaiting Pickup</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>📦 Amazon 3-pack</span><span>P. Williams</span><span class="badge-in">Notified</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span>📦 Office Supplies</span><span>Facilities</span><span class="badge-out">Collected</span>
+                    </div>
+                  </div>
+                  <div class="mockup-section-title" style="margin-top:12px">Queue Status</div>
+                  <div class="mockup-queue-bar">
+                    <div class="queue-fill" style="width:35%"></div>
+                  </div>
+                  <div class="queue-label">3 in queue · Avg wait: 4 min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workforce Presence -->
+        <div class="tour-panel" id="panel-workforce" role="tabpanel">
+          <div class="panel-content">
+            <div class="panel-info">
+              <h3>Workforce Presence</h3>
+              <p>Give HR, facilities, and operations teams a structured view of who is on-site and when — without turning attendance tracking into an administrative burden.</p>
+              <ul class="panel-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Daily on-site presence tracking and reporting
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Check-in and check-out time records
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Workforce movement patterns and occupancy visibility
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Exportable attendance data for HR reporting
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-sm">Learn More About Attendance Management →</a>
+            </div>
+            <div class="panel-visual">
+              <div class="product-ui-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-title">Workforce Presence — Today</div>
+                  <div class="mockup-status online">● Live</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-stats-row">
+                    <div class="mockup-stat"><span class="stat-num green">142</span><span class="stat-label">On-Site</span></div>
+                    <div class="mockup-stat"><span class="stat-num">38</span><span class="stat-label">Remote</span></div>
+                    <div class="mockup-stat"><span class="stat-num gray">12</span><span class="stat-label">Leave</span></div>
+                    <div class="mockup-stat"><span class="stat-num">78%</span><span class="stat-label">Presence Rate</span></div>
+                  </div>
+                  <div class="presence-chart">
+                    <div class="chart-bar" style="height:40%"><span>Mon</span></div>
+                    <div class="chart-bar" style="height:65%"><span>Tue</span></div>
+                    <div class="chart-bar" style="height:80%"><span>Wed</span></div>
+                    <div class="chart-bar active" style="height:78%"><span>Thu</span></div>
+                    <div class="chart-bar" style="height:55%"><span>Fri</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visibility & Control -->
+        <div class="tour-panel" id="panel-visibility" role="tabpanel">
+          <div class="panel-content">
+            <div class="panel-info">
+              <h3>Visibility &amp; Control</h3>
+              <p>Bring every operational workflow into one control layer. See what is happening across arrivals, spaces, tasks, and presence without switching between systems.</p>
+              <ul class="panel-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Cross-workflow operational dashboard
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  AI-assisted operational alerts and pattern detection
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Security and compliance controls across all modules
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/><path d="M5 8l2 2 4-4" stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Multi-location operational view for distributed teams
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline btn-sm">Explore Platform Control →</a>
+            </div>
+            <div class="panel-visual">
+              <div class="product-ui-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span></span><span></span><span></span></div>
+                  <div class="mockup-title">Operations Control — Overview</div>
+                  <div class="mockup-status online">● All Systems Operational</div>
+                </div>
+                <div class="mockup-body">
+                  <div class="control-grid">
+                    <div class="control-widget green">
+                      <div class="widget-label">Arrivals</div>
+                      <div class="widget-value">8 / 12</div>
+                      <div class="widget-status">On track</div>
+                    </div>
+                    <div class="control-widget orange">
+                      <div class="widget-label">Space Usage</div>
+                      <div class="widget-value">68%</div>
+                      <div class="widget-status">High demand</div>
+                    </div>
+                    <div class="control-widget green">
+                      <div class="widget-label">Front Desk</div>
+                      <div class="widget-value">5 open</div>
+                      <div class="widget-status">2 urgent</div>
+                    </div>
+                    <div class="control-widget green">
+                      <div class="widget-label">Presence</div>
+                      <div class="widget-value">142</div>
+                      <div class="widget-status">On-site now</div>
+                    </div>
+                  </div>
+                  <div class="ai-alert-bar">
+                    <span class="ai-icon">✦</span>
+                    AI: Floor 3 near capacity — 2 rooms available before 3pm peak
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 8: WHO VIZITOR IS FOR
+============================================================ -->
+<section class="audience-section" id="audience">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Built For</div>
+      <h2 class="section-heading">Built for the teams that keep<br/>the workplace running</h2>
+      <p class="section-subtext">Vizitor supports the people managing arrivals, spaces, front-desk tasks, attendance, and operational visibility across the workplace.</p>
+    </div>
+
+    <div class="role-cards-grid">
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="5" stroke="#2563EB" stroke-width="1.5"/><path d="M6 28v-2a10 10 0 0 1 20 0v2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><path d="M22 14l2 2 4-4" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Workplace Admins</h3>
+        <p class="role-pain">Managing daily operations across multiple systems without a unified view.</p>
+        <p class="role-gain">One operational layer to coordinate arrivals, spaces, tasks, and presence without tool-switching.</p>
+        <a href="#" class="role-link">Solutions for Workplace Admins →</a>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="3" stroke="#2563EB" stroke-width="1.5"/><path d="M10 16h12M10 20h8" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Front Desk Teams</h3>
+        <p class="role-pain">Absorbing too many unstructured tasks with no system to manage them efficiently.</p>
+        <p class="role-gain">Structured workflows for deliveries, visitor check-in, queues, and tasks — all in one view.</p>
+        <a href="#" class="role-link">Solutions for Front Desk Teams →</a>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 6h24M4 16h24M4 26h16" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="5" stroke="#06B6D4" stroke-width="1.5"/><path d="M21 24l2 2 3-3" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Facilities &amp; Workplace Ops</h3>
+        <p class="role-pain">Space usage decisions made without reliable data on occupancy and flow.</p>
+        <p class="role-gain">Room and desk utilization analytics, occupancy tracking, and space management control.</p>
+        <a href="#" class="role-link">Solutions for Facilities Teams →</a>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="10" r="5" stroke="#2563EB" stroke-width="1.5"/><circle cx="24" cy="10" r="4" stroke="#2563EB" stroke-width="1.5"/><path d="M4 28v-1a10 10 0 0 1 20 0v1" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/><path d="M26 16a6 6 0 0 1 4 5.5V28" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>HR &amp; Attendance Owners</h3>
+        <p class="role-pain">Attendance data scattered across manual processes or separate tools.</p>
+        <p class="role-gain">Structured daily presence tracking, check-in records, and exportable data for HR reporting.</p>
+        <a href="#" class="role-link">Solutions for HR &amp; Attendance →</a>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l12 5v8c0 6-5 11-12 13C9 28 4 23 4 17V9l12-5z" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 16l3 3 7-7" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Security &amp; Compliance</h3>
+        <p class="role-pain">Visitor records and access logs that are incomplete, delayed, or unreliable.</p>
+        <p class="role-gain">Audit-ready visitor logs, NDA capture, and access documentation with real-time entry tracking.</p>
+        <a href="#" class="role-link">Solutions for Security Teams →</a>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="10" height="10" rx="2" stroke="#2563EB" stroke-width="1.5"/><rect x="18" y="4" width="10" height="10" rx="2" stroke="#2563EB" stroke-width="1.5"/><rect x="4" y="18" width="10" height="10" rx="2" stroke="#2563EB" stroke-width="1.5"/><rect x="18" y="18" width="10" height="10" rx="2" stroke="#06B6D4" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Operations Leaders</h3>
+        <p class="role-pain">No consolidated view of how the workplace is performing day to day.</p>
+        <p class="role-gain">Cross-workflow operational visibility, utilization data, and the insights needed to make decisions on-time.</p>
+        <a href="#" class="role-link">Solutions for Multi-Location →</a>
+      </div>
+    </div>
+
+    <div class="section-cta centered">
+      <a href="#" class="btn btn-outline btn-lg">See Solutions by Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 9: WHY VIZITOR IS DIFFERENT
+============================================================ -->
+<section class="differentiators-section" id="why">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Why Vizitor</div>
+      <h2 class="section-heading">Why workplace teams choose Vizitor</h2>
+      <p class="section-subtext">Vizitor is built for the operational reality of the workplace — not just for one isolated workflow.</p>
+    </div>
+
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="diff-card-header">
+          <div class="diff-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#2563EB" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="diff-num">01</div>
+        </div>
+        <h3>One connected operational layer</h3>
+        <p>Vizitor does not bolt together separate tools — it provides one connected layer across arrivals, spaces, front-desk tasks, and workforce presence. That means less tool-switching, fewer manual handoffs, and a consistent operational record across the day.</p>
+      </div>
+
+      <div class="diff-card">
+        <div class="diff-card-header">
+          <div class="diff-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="#2563EB" stroke-width="1.5"/><path d="M7 12h2l2-4 2 8 2-4h2" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="diff-num">02</div>
+        </div>
+        <h3>Built around the workplace day</h3>
+        <p>The platform is structured around how workplaces actually run — from morning arrival peaks to midday space usage to afternoon operational follow-ups. The architecture maps to real operational patterns, not to feature categories.</p>
+      </div>
+
+      <div class="diff-card">
+        <div class="diff-card-header">
+          <div class="diff-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="diff-num">03</div>
+        </div>
+        <h3>AI with practical operational value</h3>
+        <p>Vizitor's AI is not decorative. It surfaces patterns, coordinates workflows across modules, flags operational issues before they escalate, and reduces the manual effort needed to keep daily operations moving. AI that is useful from day one.</p>
+      </div>
+
+      <div class="diff-card">
+        <div class="diff-card-header">
+          <div class="diff-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22V12M12 12L7 17M12 12l5 5" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 8a8 8 0 1 0-16 0" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="diff-num">04</div>
+        </div>
+        <h3>Practical enough to start, broad enough to grow</h3>
+        <p>Start with the workflows that create the most friction today — visitor management, front-desk operations, or space coordination. As your operational complexity grows, Vizitor grows with you without requiring a platform replacement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 10: PROOF IN ACTION
+============================================================ -->
+<section class="proof-section" id="proof">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Customer Proof</div>
+      <h2 class="section-heading">Proven in real workplace operations</h2>
+      <p class="section-subtext">Vizitor is used by teams managing arrivals, front-desk workflows, spaces, and workplace coordination across real operational environments.</p>
+    </div>
+
+    <div class="proof-layout">
+      <!-- Featured Story -->
+      <div class="proof-featured">
+        <div class="proof-featured-label">Customer Story</div>
+        <div class="proof-org">
+          <div class="proof-org-logo">DC</div>
+          <div>
+            <div class="proof-org-name">Delhivery Corp HQ</div>
+            <div class="proof-org-meta">Enterprise · 1,200+ employees · 4 locations</div>
+          </div>
+        </div>
+        <h3 class="proof-featured-title">From manual visitor logs to coordinated daily arrivals across four offices</h3>
+        <p class="proof-featured-desc">With high visitor volumes, multiple floors, and distributed admin teams, Delhivery needed a way to coordinate arrivals without creating bottlenecks at reception. Vizitor replaced four separate tools and gave every location a consistent operational baseline.</p>
+        <div class="proof-metrics">
+          <div class="proof-metric">
+            <span class="metric-val">74%</span>
+            <span class="metric-label">Reduction in manual check-in time</span>
+          </div>
+          <div class="proof-metric">
+            <span class="metric-val">4×</span>
+            <span class="metric-label">Faster front-desk task resolution</span>
+          </div>
+          <div class="proof-metric">
+            <span class="metric-val">100%</span>
+            <span class="metric-label">Visitor compliance documentation</span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-outline btn-sm">Read Full Story →</a>
+      </div>
+
+      <!-- Supporting Proof -->
+      <div class="proof-supporting">
+        <div class="proof-card">
+          <div class="proof-card-logo">TI</div>
+          <h4>Tata Insights</h4>
+          <p class="proof-card-outcome">Reduced desk booking conflicts by 60% and improved space utilization reporting within 6 weeks of going live.</p>
+          <div class="proof-card-modules">Spaces · Attendance</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-card-logo">SK</div>
+          <h4>Skye Technologies</h4>
+          <p class="proof-card-outcome">Consolidated visitor management and delivery operations into one system — front-desk workload dropped visibly in the first month.</p>
+          <div class="proof-card-modules">Visitor Mgmt · Delivery</div>
+        </div>
+        <div class="proof-card testimonial-card">
+          <div class="quote-icon">"</div>
+          <blockquote>Vizitor gave us one place to see what was happening across our three offices. Before, we were always reacting. Now we can actually coordinate the day before it starts.</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">MP</div>
+            <div>
+              <div class="author-name">Meghna Pillai</div>
+              <div class="author-title">Workplace Operations Lead, Skye Technologies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta centered">
+      <a href="#" class="btn btn-outline btn-lg">See Customer Stories</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 11: COMMERCIAL CONFIDENCE
+============================================================ -->
+<section class="confidence-section" id="evaluate">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Getting Started</div>
+      <h2 class="section-heading">Start with the workplace workflows<br/>that matter most</h2>
+      <p class="section-subtext">Whether you are solving visitor coordination, front-desk operations, space usage, or broader workplace flow — Vizitor gives you a practical path to evaluate and get started.</p>
+    </div>
+
+    <div class="confidence-grid">
+      <div class="confidence-block">
+        <div class="confidence-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#2563EB" stroke-width="1.5"/><path d="M10 14l3 3 5-5" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Start with what is urgent</h3>
+        <p>You do not need to deploy the full platform on day one. Start with the module that creates the most friction today — visitor arrivals, front-desk operations, or space coordination.</p>
+      </div>
+      <div class="confidence-block">
+        <div class="confidence-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="22" height="18" rx="3" stroke="#2563EB" stroke-width="1.5"/><path d="M9 12h10M9 16h6" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>See pricing clearly</h3>
+        <p>Pricing is structured around your operational footprint — not hidden in packages. View exactly what is included before you commit to anything.</p>
+        <a href="#" class="confidence-link">View Pricing →</a>
+      </div>
+      <div class="confidence-block">
+        <div class="confidence-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#2563EB" stroke-width="1.5"/><path d="M14 9v5l3 3" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Get a guided walkthrough</h3>
+        <p>Book a demo that is scoped to your workplace type and operational challenges — not a generic product tour.</p>
+        <a href="#" class="confidence-link demo-trigger">Book Demo →</a>
+      </div>
+      <div class="confidence-block">
+        <div class="confidence-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 24V8l10-5 10 5v16" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="10" y="16" width="8" height="8" rx="1" stroke="#06B6D4" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Built to scale with you</h3>
+        <p>From a single office to a multi-location network, Vizitor grows with your operational complexity — without requiring new systems as you expand.</p>
+      </div>
+    </div>
+
+    <div class="confidence-ctas">
+      <a href="#" class="btn btn-primary btn-lg demo-trigger">Book Demo</a>
+      <a href="#" class="btn btn-outline btn-lg">View Pricing</a>
+      <a href="#" class="btn btn-text btn-lg">Explore Platform →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SECTION 12: FINAL DEMO CTA
+============================================================ -->
+<section class="final-cta-section" id="demo">
+  <div class="container">
+    <div class="final-cta-inner">
+      <div class="final-cta-label">
+        <span class="badge-dot accent"></span>
+        Ready when you are
+      </div>
+      <h2>See how Vizitor can simplify<br/>your workplace operations</h2>
+      <p>Book a demo to explore how Vizitor can support your visitor workflows, shared spaces, front-desk operations, and day-to-day workplace coordination.</p>
+      <div class="final-cta-btns">
+        <a href="#" class="btn btn-white btn-lg demo-trigger">Book Demo</a>
+        <a href="#" class="btn btn-outline-white btn-lg">View Pricing</a>
+      </div>
+      <p class="final-cta-micro">Get a walkthrough tailored to your workplace setup and operational needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Vizitor">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#2563EB"/><path d="M7 8h14M7 14h10M7 20h12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="21" cy="20" r="3" fill="#06B6D4"/></svg>
+          <span class="logo-text">Vizitor</span>
+        </a>
+        <p class="footer-brand-desc">AI-powered workplace operations platform. One connected system to coordinate the daily flow of visitors, spaces, resources, and front-desk operations.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M5 8v5M5 5.5V6M8.5 13V10c0-1.5 4-1.5 4 0v3M8.5 8v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 2l6 7L2 16h3l4.5-5 4.5 5H17l-6-7.5L17 2h-3L9.5 7 5 2H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="3" width="16" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7 6.5l5 2.5-5 2.5V6.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">Platform Overview</a></li>
+            <li><a href="#">Visitor Management</a></li>
+            <li><a href="#">Meeting Room Booking</a></li>
+            <li><a href="#">Desk Booking</a></li>
+            <li><a href="#">Space Management</a></li>
+            <li><a href="#">Delivery Management</a></li>
+            <li><a href="#">Queue Management</a></li>
+            <li><a href="#">Attendance Management</a></li>
+            <li><a href="#">Integrations &amp; Apps</a></li>
+            <li><a href="#">Security &amp; Compliance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#">For Workplace Admins</a></li>
+            <li><a href="#">For Front Desk Teams</a></li>
+            <li><a href="#">For Facilities &amp; Workplace Ops</a></li>
+            <li><a href="#">For HR &amp; Attendance</a></li>
+            <li><a href="#">For Security &amp; Compliance</a></li>
+            <li><a href="#">For Multi-Location Workplaces</a></li>
+          </ul>
+          <h4 style="margin-top:24px">Industries</h4>
+          <ul>
+            <li><a href="#">Corporate Offices</a></li>
+            <li><a href="#">Enterprise Campuses</a></li>
+            <li><a href="#">Coworking Spaces</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Manufacturing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog / Insights</a></li>
+            <li><a href="#">Guides / Playbooks</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Compare / Alternatives</a></li>
+            <li><a href="#">Product Updates</a></li>
+          </ul>
+          <h4 style="margin-top:24px">Company</h4>
+          <ul>
+            <li><a href="#">About Vizitor</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#" class="footer-cta-link demo-trigger">Book Demo</a></li>
+            <li><a href="#">Try for Free</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+          <h4 style="margin-top:24px">Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">System Status</a></li>
+            <li><a href="#">App Downloads</a></li>
+            <li><a href="#">Setup Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <span>© 2025 Vizitor. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cancellation &amp; Refund</a>
+      </div>
+      <div class="footer-badges">
+        <div class="footer-badge">SOC 2 Type II</div>
+        <div class="footer-badge">GDPR Ready</div>
+        <div class="footer-badge">ISO 27001</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+  DEMO MODAL
+============================================================ -->
+<div class="modal-overlay" id="demo-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-container">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-header">
+      <div class="modal-badge">Book a Demo</div>
+      <h2 id="modal-title">See Vizitor in action</h2>
+      <p>Get a walkthrough tailored to your workplace setup and operational challenges.</p>
+    </div>
+    <form class="demo-form" id="demo-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-name">Full Name <span class="required">*</span></label>
+          <input type="text" id="f-name" name="name" placeholder="Sarah Chen" required />
+        </div>
+        <div class="form-group">
+          <label for="f-email">Work Email <span class="required">*</span></label>
+          <input type="email" id="f-email" name="email" placeholder="sarah@company.com" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-company">Company <span class="required">*</span></label>
+          <input type="text" id="f-company" name="company" placeholder="Your company name" required />
+        </div>
+        <div class="form-group">
+          <label for="f-size">Team Size</label>
+          <select id="f-size" name="size">
+            <option value="">Select size</option>
+            <option>1–50 employees</option>
+            <option>51–200 employees</option>
+            <option>201–500 employees</option>
+            <option>501–1,000 employees</option>
+            <option>1,000+ employees</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-phone">Phone</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+1 (555) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="f-message">What are you looking to solve?</label>
+          <input type="text" id="f-message" name="message" placeholder="e.g. visitor management, desk booking..." />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full btn-lg">Book My Demo</button>
+      <p class="form-disclaimer">No commitment required. We will confirm within one business day.</p>
+    </form>
+
+    <!-- Success State -->
+    <div class="form-success" id="form-success" style="display:none">
+      <div class="success-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/><path d="M16 24l6 6 12-12" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>You are on the list.</h3>
+      <p>We have received your request and will confirm your demo within one business day.</p>
+      <button class="btn btn-outline btn-sm modal-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
